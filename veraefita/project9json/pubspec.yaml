@@ -35,18 +35,17 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   json_annotation: ^4.9.0
-
+  shared_preferences: ^2.2.2
+  intl: ^0.19.0
+# dev_dependencies are dependencies needed for development and testing.
+# They are not included in the package when it is published.  
 dev_dependencies:
   flutter_test:
     sdk: flutter
   build_runner: ^2.4.8
   json_serializable: ^6.8.0
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
   flutter_lints: ^5.0.0
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
