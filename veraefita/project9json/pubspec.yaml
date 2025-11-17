@@ -40,6 +40,7 @@ dependencies:
   path_provider: ^2.1.1
   path: ^1.9.0
   encrypt: ^5.0.1 
+  http: ^1.2.1
 # dev_dependencies are dependencies needed for development and testing.
 # They are not included in the package when it is published.  
 dev_dependencies:
