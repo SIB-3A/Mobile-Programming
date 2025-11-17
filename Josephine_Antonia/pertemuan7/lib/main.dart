@@ -1,58 +1,25 @@
 import 'package:flutter/material.dart';
+import 'home_page.dart';
+import 'profile_page.dart';
+import 'gallery_page.dart';
 
 void main() {
-  runApp(const GantiWarnaApp());
+  runApp(const MyApp());
 }
 
-class GantiWarnaApp extends StatefulWidget {
-  const GantiWarnaApp({super.key});
-
-  @override
-  State<GantiWarnaApp> createState() => _GantiWarnaAppState();
-}
-
-class _GantiWarnaAppState extends State<GantiWarnaApp> {
-  bool _isBlue = true;
-
-  void _ubahWarna() {
-    setState(() {
-      _isBlue = !_isBlue;
-    });
-  }
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        backgroundColor: _isBlue ? Colors.blue[100] : Colors.pink[100],
-        appBar: AppBar(
-          title: const Text('Contoh Stateful: Ubah Warna'),
-          backgroundColor: _isBlue ? Colors.blue : Colors.pink,
-        ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                _isBlue ? 'Warna biru' : 'Warna Merah Muda',
-                style: TextStyle(
-                  fontSize: 24,
-                  color: _isBlue ? Colors.blue[900] : Colors.pink[900],
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: _ubahWarna,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: _isBlue ? Colors.blue : Colors.pink,
-                ),
-                child: const Text('Ubah Warna'),
-          ),
-            ],
-        ),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomePage(),
+        '/profile': (context) => const ProfilePage(),
+        '/gallery': (context) => const GalleryPage(),
+      },
     );
   }
 }

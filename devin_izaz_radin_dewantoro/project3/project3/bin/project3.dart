@@ -87,9 +87,9 @@ void main(List<String> arguments) {
 
   // Anonimus Function
   var nilai = [90, 80, 70, 100];
-  nilai.forEach((angka) {
+  for (var angka in nilai) {
     print("Nilai = $angka");
-  });
+  }
 }
 
 // void tampil(String nama, int umur, [String? alamat]) {

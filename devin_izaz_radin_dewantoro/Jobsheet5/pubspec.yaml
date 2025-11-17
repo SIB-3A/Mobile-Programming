@@ -57,8 +57,8 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
-    assets:
-    - assets/devin.jpg
+  assets:
+    - assets/devin.JPG
 
   # To add assets to your application, add an assets section, like this:
   # assets:

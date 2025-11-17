@@ -18,14 +18,14 @@ void main(List<String> arguments) {
   //variabel
   int umur = 20;
   double tinggi = 175.5;
-  bool jenis_kelamin = false; //true = laki-laki, false = perempuan
+  bool jenisKelamin = false; //true = laki-laki, false = perempuan
   String alamat = 'Jl. Merdeka No. 45';
   stdout.writeln("Umur saya $umur tahun");
   stdout.writeln("Tinggi saya $tinggi cm");
   //stdout.writeln(
   //  "Jenis kelamin saya ${jenis_kelamin ? 'Laki-laki' : 'Perempuan'}",
   //);
-  if (jenis_kelamin == false) {
+  if (jenisKelamin == false) {
     stdout.writeln("Jenis kelamin saya Laki-laki");
   } else {
     stdout.writeln("Jenis kelamin saya Perempuan");

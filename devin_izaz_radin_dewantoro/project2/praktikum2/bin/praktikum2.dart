@@ -27,7 +27,7 @@ void main(List<String> arguments) {
       kategori = "B (Lulus)";
     } else {
       kategori = "C (Tidak Lulus)";
-    };
+    }
 
     // Simpan ke list
     daftarMahasiswa.add({

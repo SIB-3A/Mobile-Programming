@@ -27,7 +27,7 @@ class GridViewApp extends StatelessWidget {
       ),
       body: GridView.count(
         crossAxisCount: 2,
-        children: List.generate(6, (index) {
+        children: List.generate(10, (index) {
           return Card(
             color: Colors.blue,
             margin: const EdgeInsets.all(8),
